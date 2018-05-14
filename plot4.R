@@ -24,7 +24,7 @@ power[1:1440, "Time"] <- format(power[1:1440, "Time"], "2007-02-01 %H:%M:%S")
 power[1441:2880, "Time"] <- format(power[1441:2880, "Time"], "2007-02-02 %H:%M:%S")
 
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
-with(airquality, {
+with(householdpower, {
 
 ##Plot2.R  
   plot(power$Time,as.numeric(as.character(power$GLBActive)),
